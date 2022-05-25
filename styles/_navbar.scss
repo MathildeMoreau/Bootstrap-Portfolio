@@ -1,0 +1,74 @@
+header{
+    nav{
+        .container-fluid{
+            .collapse{
+                .autres{
+                    .dropdown{
+                            #profile{
+                                width: 30%;
+                                border-radius: 50%;
+                            }
+                            .dropdown-menu{
+                                .dropdown-item:hover{
+                                    background-color: lighten(#212529, 15%);
+                                }
+                            }
+                        }
+                }
+            }
+        }
+    }
+    article{
+        background-image: linear-gradient(to bottom, #50555400, #50555400, #50555400, #212522), url(../images/beach.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 70vh;
+        #compass{
+            font-size: 5rem;
+        }
+        .project{
+            text-shadow: 4px 2px 5px #212522;
+        }
+        .technos{
+            #html{
+                color: white;
+                &:hover{
+                    color: red;
+                }
+            }
+            #css{
+                color: white;
+                &:hover{
+                    color: #2862E9;
+                }
+            }
+            #sass{
+                color: white;
+                &:hover{
+                    color: #C76395;
+                }
+            }
+            #javascript{
+                color: white;
+                &:hover{
+                    color: #EFD81D;
+                }
+            }
+            button{
+                .icone{
+                    font-size: 2.5rem;
+                }
+            }
+        }
+        .row{
+            .col-6{
+                #project-button{
+                    background: white;
+                    &:hover{
+                        background: darken(white, 15%);
+                    }
+                }
+            }
+        }
+    }
+}

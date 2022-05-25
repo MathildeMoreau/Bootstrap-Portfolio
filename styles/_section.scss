@@ -1,0 +1,12 @@
+#projets{
+    .row{
+        .col-2{
+            text-decoration: none;
+            .card{
+                &:hover{
+                    transform: scale(1.5);
+                }
+            }
+        }
+    }
+}

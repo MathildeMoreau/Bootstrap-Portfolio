@@ -5,8 +5,146 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mathilde Moreau | Developpeur web</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://kit.fontawesome.com/0f548b3386.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    
+<body class="bg-dark text-white">
+  <header>
+    <nav class="navbar navbar-expand-lg my-3">
+        <div class="container-fluid">
+          <a class="navbar-brand ms-3" href="#" id="logo"><img src="./images/logo.png" alt="Logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item mx-5">
+                <a class="nav-link active text-white" aria-current="page" href="#">Accueil</a>
+              </li>
+              <li class="nav-item me-5">
+                <a class="nav-link text-white" href="#projets">Projets</a>
+              </li>
+              <li class="nav-item me-5">
+                <a class="nav-link text-white" href="#">Compétences</a>
+              </li>
+            </ul>
+            <div class="autres d-flex justify-content-between align-items-center">
+              <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+              <a href="https://github.com/MathildeMoreau" class="text-white" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a>
+              <a href="https://www.linkedin.com/in/mathilde-moreau-b98036b3/" class="text-white" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+              <div class="dropdown bg-dark w-25">
+                <img src="./images/profile.jpg" class="dropdown-toggle" id="profile" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"></img>
+                <ul class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item text-white" href="#">A propos de moi</a></li>
+                  <li><a class="dropdown-item text-white" href="#">Contact</a></li>
+                  <li><a class="dropdown-item text-white" href="#">GitHub</a></li>
+                  <li><a class="dropdown-item text-white" href="#">Linkedin</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+    </nav>
+    <article class="d-flex align-items-start flex-column justify-content-center">
+      <h2 class="m-5 text-uppercase fs-6">Current project</h2>
+      <i class="fa-solid fa-compass fa-xl mx-5" id="compass"></i>
+      <h3 class="mt-5 mb-2 mx-5 text-lowercase fw-bold project" id="project-title">Travel Blog</h3>
+      <p class="mx-5 project">Blog de voyages composés de différents articles</p>
+      <div class="technos m-5 w-100">
+        <button  type="button" class="btn"
+        data-bs-toggle="tooltip" data-bs-placement="bottom"
+        data-bs-custom-class="custom-tooltip"
+        title="HTML 5">
+          <i class="fa-brands fa-html5 fa-xl icone" id="html"></i>
+        </button>
+        <button  type="button" class="btn btn-transparent"
+        data-bs-toggle="tooltip" data-bs-placement="bottom"
+        data-bs-custom-class="custom-tooltip"
+        title="CSS 3">
+        <i class="fa-brands fa-css3-alt fa-xl icone" id="css"></i>
+        </button>
+        <button  type="button" class="btn"
+        data-bs-toggle="tooltip" data-bs-placement="bottom"
+        data-bs-custom-class="custom-tooltip"
+        title="SASS">
+        <i class="fa-brands fa-sass fa-xl icone" id="sass"></i>
+        </button>
+        <button  type="button" class="btn"
+        data-bs-toggle="tooltip" data-bs-placement="bottom"
+        data-bs-custom-class="custom-tooltip"
+        title="JavaScript">
+        <i class="fa-brands fa-js fa-xl icone" id="javascript"></i>
+        </button>
+        <div class="row mt-5 w-25">
+          <div class="col-6">
+            <a class="btn fs-5 p-3" id="project-button" href="https://mathildemoreau.github.io/Blog-Travel/" target="_blank">Voir le projet</a>
+          </div>
+          <div class="col-lg-6">
+            <button class="btn btn-secondary fs-5 p-3"><i class="fa-solid fa-circle-info"></i> Plus d'infos</button>
+          </div>
+        </div>
+      </div>
+    </article>
+  </header>
+
+  <main>
+    <section id="projets">
+      <h2 class="m-5">Projets</h2>
+      <div class="row mx-5">
+        <a class="col-2" href="https://mathildemoreau.github.io/Boutique-du-the/" target="_blank">
+            <div class="card bg-dark">
+              <img src="./images/Boutique thé.png" class="card-img-top" alt="Site du thé">
+              <div class="card-body">
+                <h5 class="card-title">Boutique du thé</h5>
+                <p class="card-text">Site vitrine | 2022</p>
+              </div>
+            </div>
+        </a>
+        <div class="col-2">
+            <div class="card bg-dark">
+              <img src="./images/projet-asso-lumieres.png" class="card-img-top" alt="Association lumières">
+              <div class="card-body">
+                <h5 class="card-title">Association faites des lumières</h5>
+                <p class="card-text">Site vitrine | 2021</p>
+              </div>
+            </div>
+          </div>
+        <div class="col-2">
+            <div class="card bg-dark">
+              <img src="./images/projet-des.png" class="card-img-top" alt="Jeu de dé">
+              <div class="card-body">
+                <h5 class="card-title">Jeu de dé</h5>
+                <p class="card-text">Jeu en ligne | 2022</p>
+              </div>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="card bg-dark">
+              <img src="./images/Travel-blog.png" class="card-img-top" alt="Travel Blog">
+              <div class="card-body">
+                <h5 class="card-title">Travel Blog</h5>
+                <p class="card-text">Site vitrine | 2022</p>
+              </div>
+          </div>
+        </div>
+        <div class="col-2">
+            <div class="card bg-dark">
+              <img src="./images/projet-reflexo.png" class="card-img-top" alt="Reflexologie">
+              <div class="card-body">
+                <h5 class="card-title">Cabinet de Reflexologie</h5>
+                <p class="card-text">Site vitrine | 2022</p>
+              </div>
+            </div>
+        </div>
+      </div>
+
+
+    </section>
+  </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+
 </body>
 </html>

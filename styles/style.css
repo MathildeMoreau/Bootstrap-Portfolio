@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap");
+header nav .container-fluid .collapse .autres .dropdown #profile {
+  width: 30%;
+  border-radius: 50%;
+}
+
+header nav .container-fluid .collapse .autres .dropdown .dropdown-menu .dropdown-item:hover {
+  background-color: #434b53;
+}
+
+header article {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#50555400), color-stop(#50555400), color-stop(#50555400), to(#212522)), url(../images/beach.jpg);
+  background-image: linear-gradient(to bottom, #50555400, #50555400, #50555400, #212522), url(../images/beach.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 70vh;
+}
+
+header article #compass {
+  font-size: 5rem;
+}
+
+header article .project {
+  text-shadow: 4px 2px 5px #212522;
+}
+
+header article .technos #html {
+  color: white;
+}
+
+header article .technos #html:hover {
+  color: red;
+}
+
+header article .technos #css {
+  color: white;
+}
+
+header article .technos #css:hover {
+  color: #2862E9;
+}
+
+header article .technos #sass {
+  color: white;
+}
+
+header article .technos #sass:hover {
+  color: #C76395;
+}
+
+header article .technos #javascript {
+  color: white;
+}
+
+header article .technos #javascript:hover {
+  color: #EFD81D;
+}
+
+header article .technos button .icone {
+  font-size: 2.5rem;
+}
+
+header article .row .col-6 #project-button {
+  background: white;
+}
+
+header article .row .col-6 #project-button:hover {
+  background: #d9d9d9;
+}
+
+#projets .row .col-2 {
+  text-decoration: none;
+}
+
+#projets .row .col-2 .card:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+/*# sourceMappingURL=style.css.map */
