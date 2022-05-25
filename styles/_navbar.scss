@@ -1,4 +1,7 @@
 header{
+    background-image: linear-gradient(to bottom, #50555400, #50555400, #50555400, #212522), url(../images/beach.jpg);
+    background-position: center;
+    background-size: cover;
     nav{
         .container-fluid{
             .collapse{
@@ -19,9 +22,6 @@ header{
         }
     }
     article{
-        background-image: linear-gradient(to bottom, #50555400, #50555400, #50555400, #212522), url(../images/beach.jpg);
-        background-position: center;
-        background-size: cover;
         height: 70vh;
         #compass{
             font-size: 5rem;
@@ -54,7 +54,7 @@ header{
                     color: #EFD81D;
                 }
             }
-            button{
+            a{
                 .icone{
                     font-size: 2.5rem;
                 }

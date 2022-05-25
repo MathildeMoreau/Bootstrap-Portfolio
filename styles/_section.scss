@@ -1,10 +1,57 @@
-#projets{
+section{
     .row{
         .col-2{
             text-decoration: none;
             .card{
                 &:hover{
-                    transform: scale(1.5);
+                    transform: scale(1.3);
+                    z-index: 5;
+                    .card-body{
+                        display: block;
+                    }
+                }
+                .card-image{
+                    height: 20vh;
+                    i{
+                        font-size: 5rem;
+                    }
+                }
+                .card-body{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+#competences{
+    .row{
+        .col-2{
+            #HTML-card{
+                .card-image{
+                    background: #DD4B25;
+                }   
+            }
+            #CSS-card{
+                .card-image{
+                    background: #2b64e9;
+                }
+            }
+            #SASS-card{
+                .card-image{
+                    background: #C76395;
+                }
+            }
+        }
+    }
+}
+
+#future-competences{
+    .row{
+        .col-2{
+            #Wordpress-card{
+                .card-image{
+                    background: #1D88B8;
                 }
             }
         }
