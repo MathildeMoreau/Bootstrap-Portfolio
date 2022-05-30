@@ -11,40 +11,62 @@
 </head>
 <body class="container-fluid text-white m-0 p-0">
   <header>
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#" id="logo"><img src="./images/logo.png" alt="Logo" class="w-50 ps-5"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-              <li class="nav-item mx-5">
-                <a class="nav-link active text-white" aria-current="page" href="#">Accueil</a>
-              </li>
-              <li class="nav-item me-5">
-                <a class="nav-link text-white" href="#projets">Projets</a>
-              </li>
-              <li class="nav-item me-5">
-                <a class="nav-link text-white" href="#competences">Compétences</a>
-              </li>
-            </ul>
-            <div class="autres d-flex justify-content-between align-items-center">
-              <i class="fa-solid fa-magnifying-glass fa-xl"></i>
-              <a href="https://github.com/MathildeMoreau" class="text-white" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a>
-              <a href="https://www.linkedin.com/in/mathilde-moreau-b98036b3/" class="text-white" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
-              <div class="dropdown bg-transparent w-25">
-                <img src="./images/profile.jpg" class="dropdown-toggle" id="profile" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"></img>
-                <ul class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuButton1">
-                  <li><a class="dropdown-item text-white" href="#">A propos de moi</a></li>
-                  <li><a class="dropdown-item text-white" href="#">Contact</a></li>
-                  <li><a class="dropdown-item text-white" href="#">GitHub</a></li>
-                  <li><a class="dropdown-item text-white" href="#">Linkedin</a></li>
-                </ul>
-              </div>
-            </div>
+    <nav class="navbar navbar-expand-lg bg-transparent">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-6">
+            <a class="navbar-brand" href="#">
+              <img src="./images/logo.png" alt="Logo Mathilde" class="w-50 m-5">
+            </a>
+
           </div>
+          <div class="col-6" id="menu">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mb-2 mb-lg-0 d-flex justify-content-between align-items-center m-5 autres">
+                <li class="nav-item">
+                  <a class="nav-link active text-white" aria-current="page" href="#">Accueil</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#projets">Projets</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#competences">Compétences</a>
+                </li>
+                <li class="nav-item dropdown w-50">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="./images/profile.jpg" alt="" class="w-25 rounded-circle">
+                  </a>
+                  <ul class="dropdown-menu bg-dark text-white" aria-labelledby="navbarDropdown">
+                    <li>
+                      <button class="dropdown-item text-white" 
+                      href="#myInput"
+                      id="myModal"
+                      data-bs-toggle="modal"
+                      data-bs-target="#myInput">A propos de moi
+                    </button></li>
+                    <li>
+                      <button class="dropdown-item text-white"
+                      href="#"
+                      id="myModal"
+                      data-bs-toggle="modal"
+                      data-bs-target="#contactInput">
+                      Contact
+                    </button></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item text-white" href="https://github.com/MathildeMoreau" target="_blank">GitHub</a></li>
+                    <li><a class="dropdown-item text-white" href="https://www.linkedin.com/in/mathilde-moreau-b98036b3/" target="_blank">LinkedIn</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
         </div>
+      </div>
     </nav>
     <article class="d-flex align-items-start flex-column justify-content-center ms-4">
       <h2 class="m-5 text-uppercase fs-6 fw-bold">Current project</h2>
@@ -76,11 +98,17 @@
         title="JavaScript">
         <i class="fa-brands fa-js fa-xl icone" id="javascript"></i>
 </a>
-        <div class="row mt-5 w-25">
-          <div class="col-6">
-            <a class="btn fs-5 p-3" id="project-button" href="https://mathildemoreau.github.io/Blog-Travel/" target="_blank">Voir le projet</a>
+        <div class="row mt-5 w-50">
+          <div class="col-lg-3" id="playButton">
+            <a
+            class="btn fs-5 p-3"
+            id="project-button"
+            href="https://mathildemoreau.github.io/Blog-Travel/" target="_blank">
+              <i class="fa-solid fa-play"></i> 
+              Voir le projet
+            </a>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-3">
             <button class="btn btn-secondary fs-5 p-3"><i class="fa-solid fa-circle-info"></i> Plus d'infos</button>
           </div>
         </div>
@@ -91,8 +119,8 @@
   <main class="bg-dark m-0">
     <section id="projets">
       <h2 class="p-5">Projets</h2>
-      <div class="row mx-5">
-        <a class="col-2 text-decoration-none text-white" href="https://mathildemoreau.github.io/Boutique-du-the/" target="_blank">
+      <div class="row mx-5" id="projects">
+        <a class="col-lg-2 col-6 text-decoration-none text-white" href="https://mathildemoreau.github.io/Boutique-du-the/" target="_blank">
             <div class="card bg-dark">
               <img src="./images/Boutique thé.png" class="card-img-top" alt="Site du thé">
               <div class="card-body">
@@ -101,7 +129,7 @@
               </div>
             </div>
         </a>
-        <div class="col-2">
+        <a class="col-lg-2 col-6 text-decoration-none text-white" href="https://associationfaiteslumieres.netlify.app/" target="_blank">
             <div class="card bg-dark">
               <img src="./images/projet-asso-lumieres.png" class="card-img-top" alt="Association lumières">
               <div class="card-body">
@@ -109,8 +137,8 @@
                 <p class="card-text">Site vitrine | 2021</p>
               </div>
             </div>
-          </div>
-        <div class="col-2">
+          </a>
+        <a class="col-lg-2 col-6 text-decoration-none text-white" href="https://100dicegame.netlify.app/" target="_blank">
             <div class="card bg-dark">
               <img src="./images/projet-des.png" class="card-img-top" alt="Jeu de dé">
               <div class="card-body">
@@ -118,8 +146,8 @@
                 <p class="card-text">Jeu en ligne | 2022</p>
               </div>
             </div>
-        </div>
-        <div class="col-2">
+          </a>
+        <a class="col-lg-2 col-6 text-decoration-none text-white" href="https://mathildemoreau.github.io/Blog-Travel/" target="_blank">
             <div class="card bg-dark">
               <img src="./images/Travel-blog.png" class="card-img-top" alt="Travel Blog">
               <div class="card-body">
@@ -127,8 +155,8 @@
                 <p class="card-text">Site vitrine | 2022</p>
               </div>
           </div>
-        </div>
-        <div class="col-2">
+        </a>
+        <a class="col-lg-2 col-6 text-decoration-none text-white" href="https://www.madisson-reflexologie.com/" target="_blank">
             <div class="card bg-dark">
               <img src="./images/projet-reflexo.png" class="card-img-top" alt="Reflexologie">
               <div class="card-body">
@@ -136,13 +164,22 @@
                 <p class="card-text">Site vitrine | 2022</p>
               </div>
             </div>
-        </div>
+        </a>
+        <a class="col-lg-2 col-6 text-decoration-none text-white" href="https://mathildemoreau.github.io/Zanzibar/" target="_blank">
+            <div class="card bg-dark">
+              <img src="./images/Zanzibar.png" class="card-img-top" alt="Zanzibar">
+              <div class="card-body">
+                <h5 class="card-title">Projet Zanzibar</h5>
+                <p class="card-text">Site vitrine | 2022</p>
+              </div>
+            </div>
+        </a>
       </div>
     </section>
     <section id="competences" class="pb-5">
       <h2 class="p-5">Compétences maitrisées</h2>
       <div class="row mx-5">
-        <div class="col-2">
+        <div class="col-lg-2 col-6">
           <div class="card bg-dark" id="HTML-card">
             <div class="card-image d-flex justify-content-center align-items-center">
               <i class="fa-brands fa-html5 fa-xl"></i>
@@ -152,7 +189,7 @@
             </div>
           </div>
         </div>
-        <div class="col-2">
+        <div class="col-lg-2 col-6">
           <div class="card bg-dark" id="CSS-card">
             <div class="card-image d-flex justify-content-center align-items-center">
               <i class="fa-brands fa-css3-alt fa-xl"></i>
@@ -162,7 +199,7 @@
             </div>
           </div>
         </div>
-        <div class="col-2">
+        <div class="col-lg-2 col-6">
           <div class="card bg-dark" id="SASS-card">
             <div class="card-image d-flex justify-content-center align-items-center">
               <i class="fa-brands fa-sass"></i>
@@ -172,14 +209,44 @@
             </div>
           </div>
         </div>
+        <div class="col-lg-2 col-6">
+          <div class="card bg-dark" id="bootstrap-card">
+            <div class="card-image d-flex justify-content-center align-items-center">
+              <i class="fa-brands fa-bootstrap"></i>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Bootstrap</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-6">
+          <div class="card bg-dark" id="javascript-card">
+            <div class="card-image d-flex justify-content-center align-items-center">
+              <i class="fa-brands fa-js"></i>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">JavaScript</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-6">
+          <div class="card bg-dark" id="git-card">
+            <div class="card-image d-flex justify-content-center align-items-center">
+              <i class="fa-brands fa-github"></i>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Git et GitHub</h5>
+            </div>
+          </div>
+        </div>
       </div>
 
     </section>
-    <section id="future-competences">
+    <section id="future-competences" class="pb-5">
       <h2 class="p-5">Compétences à venir</h2>
-      <div class="row mx-5">
-        <div class="col-2">
-          <div class="card bg-dark" id="Wordpress-card">
+      <div class="row mx-5 d-flex">
+        <div class="col-lg-2 col-6">
+          <div class="card bg-dark" id="wordpress-card">
             <div class="card-image d-flex justify-content-center align-items-center">
               <i class="fa-brands fa-wordpress"></i>
             </div>
@@ -188,10 +255,110 @@
             </div>
           </div>
         </div>
+        <div class="col-lg-2 col-6">
+          <div class="card bg-dark" id="vue-card">
+            <div class="card-image d-flex justify-content-center align-items-center">
+              <i class="fa-brands fa-vuejs"></i>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Vue</h5>
+            </div>
+          </div>
+      </div>
+        <div class="col-lg-2 col-6">
+          <div class="card bg-dark" id="php-card">
+            <div class="card-image d-flex justify-content-center align-items-center">
+              <i class="fa-brands fa-php"></i>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">PHP</h5>
+            </div>
+          </div>
+      </div>
+        <div class="col-lg-2 col-6">
+          <div class="card bg-dark" id="symfony-card">
+            <div class="card-image d-flex justify-content-center align-items-center">
+              <i class="fa-brands fa-symfony"></i>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Symfony</h5>
+            </div>
+          </div>
+      </div>
 
 
     </section>
   </main>
+
+  <footer class="bg-dark m-0 p-5">
+    <hr class="bg-dark d-none d-xxl-block">
+    <div class="d-flex justify-content-around align-items-center m-2">
+      <h6>Made with Bootstrap ! </h6>
+      <h6 class="d-flex justify-content-around align-items-center">
+        <a class="dropdown-item text-white" href="https://github.com/MathildeMoreau" target="_blank">
+          <i class="fa-brands fa-github fa-xl m-3"></i>
+        </a>
+        <a class="dropdown-item text-white" href="https://www.linkedin.com/in/mathilde-moreau-b98036b3/" target="_blank">
+          <i class="fa-brands fa-linkedin fa-xl m-3"></i>
+        </a>
+      </h6>
+    </div>
+
+  </footer>
+
+<!-- Modal A Propos-->
+<div class="modal fade" id="myInput" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content bg-dark">
+      <div class="modal-header bg-dark">
+        <h5 class="modal-title bg-dark" id="exampleModalLabel">A propos de moi</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Après un bac littéraire, j’ai démarré mes études supérieures par un BTS Assistant de Manager suivi ensuite d’un Bachelor en Tourisme et évènementiel, que j’ai suivi en alternance.</p>
+        <p>A la suite de mon alternance, j’ai souhaité poursuivre dans le domaine de l’évènementiel, mais ne trouvant pas d’emploi, j’ai du trouver un petit boulot.</p>
+        <p>Ce qui m’a conduit par hasard dans le monde du transport routier, où je suis restée plus de 7 ans ! J’ai principalement excercée en tant qu’affréteuse nationale et internationale, un métier qui combine le commerce, le service client, la saisie, la maitrise de différentes langues et processus internationaux et bien d’autres.</p>
+        <p>Mais après un confinement et une première maternité, j’ai eu envie de changement et le développement web m’est venu très naturellement. J’ai donc tout quitté pour me lancer dans une formation en ligne en solo pendant 10 mois avant de rejoindre une équipe réelle à Niort lors d’une POEC.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="modalButton">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal contact -->
+<div class="modal fade" id="contactInput" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content bg-dark">
+      <div class="modal-header bg-dark">
+        <h5 class="modal-title bg-dark" id="exampleModalLabel">Contact</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body d-flex flex-column">
+        <a href="mailto:mathilde.moreau85@gmail.com" class="text-white text-decoration-none my-3">
+          <i class="fa-solid fa-at me-2"></i>
+          mathilde.moreau85@gmail.com
+        </a>
+        <a href="tel:+33634634098" class="text-white text-decoration-none my-3">
+          <i class="fa-solid fa-phone me-2"></i>
+          06.34.63.40.98
+        </a>
+        <a href="./CV - Mathilde.pdf" download="CV-Mathilde-Moreau" class="text-white text-decoration-none my-3">
+          <i class="fa-solid fa-download me-2"></i>
+          Télécharger mon CV
+        </a>
+        <div class="my-3">
+          <i class="fa-solid fa-location-dot me-2"></i>
+          Niort (79) - France
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="modalButton">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="./script.js"></script>

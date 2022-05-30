@@ -1,11 +1,13 @@
 section{
     .row{
-        .col-2{
+        .col-lg-2{
             text-decoration: none;
             .card{
+                transition: 0.5s;
                 &:hover{
                     transform: scale(1.3);
-                    z-index: 5;
+                    transition: 0.5s;
+                    z-index: 15;
                     .card-body{
                         display: block;
                     }
@@ -26,7 +28,7 @@ section{
 
 #competences{
     .row{
-        .col-2{
+        .col-lg-2{
             #HTML-card{
                 .card-image{
                     background: #DD4B25;
@@ -42,16 +44,46 @@ section{
                     background: #C76395;
                 }
             }
+            #javascript-card{
+                .card-image{
+                    background: #E8D44D;
+                }
+            }
+            #bootstrap-card{
+                .card-image{
+                    background: #732FF9;
+                }
+            }
+            #git-card{
+                .card-image{
+                    background: lighten($color: #212529, $amount: 10%);
+                }
+            }
         }
     }
 }
 
 #future-competences{
     .row{
-        .col-2{
-            #Wordpress-card{
+        .col-lg-2{
+            #wordpress-card{
                 .card-image{
                     background: #1D88B8;
+                }
+            }
+            #vue-card{
+                .card-image{
+                    background: #4FC08D;
+                }
+            }
+            #php-card{
+                .card-image{
+                    background: #7377AD;
+                }
+            }
+            #symfony-card{
+                .card-image{
+                    background: lighten($color: #212529, $amount: 10%);
                 }
             }
         }

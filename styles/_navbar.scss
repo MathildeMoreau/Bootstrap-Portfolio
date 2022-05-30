@@ -2,21 +2,22 @@ header{
     background-image: linear-gradient(to bottom, #50555400, #50555400, #50555400, #212522), url(../images/beach.jpg);
     background-position: center;
     background-size: cover;
+    overflow: hidden;
     nav{
         .container-fluid{
-            .collapse{
-                .autres{
-                    .dropdown{
-                            #profile{
-                                width: 30%;
-                                border-radius: 50%;
-                            }
-                            .dropdown-menu{
-                                .dropdown-item:hover{
-                                    background-color: lighten(#212529, 15%);
+            .row{
+                #menu{
+                    .collapse{
+                        .autres{
+                            .dropdown{
+                                    .dropdown-menu{
+                                        .dropdown-item:hover{
+                                            background-color: lighten(#212529, 15%);
+                                        }
+                                    }
                                 }
-                            }
                         }
+                    }
                 }
             }
         }
@@ -39,7 +40,7 @@ header{
             #css{
                 color: white;
                 &:hover{
-                    color: #2862E9;
+                    color: #2b64e9;
                 }
             }
             #sass{
@@ -61,7 +62,7 @@ header{
             }
         }
         .row{
-            .col-6{
+            #playButton{
                 #project-button{
                     background: white;
                     &:hover{
