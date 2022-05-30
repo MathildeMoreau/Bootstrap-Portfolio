@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -35,26 +35,29 @@
                 <li class="nav-item">
                   <a class="nav-link text-white" href="#competences">Compétences</a>
                 </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="./CV-Mathilde.pdf" download="CV-Mathilde-Moreau"><i class="fa-solid fa-download"></i> CV</a>
+                </li>
                 <li class="nav-item dropdown w-50">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <img src="./images/profile.jpg" alt="" class="w-25 rounded-circle">
                   </a>
                   <ul class="dropdown-menu bg-dark text-white" aria-labelledby="navbarDropdown">
                     <li>
-                      <button class="dropdown-item text-white" 
+                      <a class="dropdown-item text-white" 
                       href="#myInput"
                       id="myModal"
                       data-bs-toggle="modal"
                       data-bs-target="#myInput">A propos de moi
-                    </button></li>
+                    </a></li>
                     <li>
-                      <button class="dropdown-item text-white"
+                      <a class="dropdown-item text-white"
                       href="#"
                       id="myModal"
                       data-bs-toggle="modal"
                       data-bs-target="#contactInput">
                       Contact
-                    </button></li>
+                    </a></li>
                     <li><hr class="dropdown-divider"></li>
                     <li><a class="dropdown-item text-white" href="https://github.com/MathildeMoreau" target="_blank">GitHub</a></li>
                     <li><a class="dropdown-item text-white" href="https://www.linkedin.com/in/mathilde-moreau-b98036b3/" target="_blank">LinkedIn</a></li>
@@ -74,25 +77,25 @@
       <h3 class="mt-5 mb-2 mx-5 text-uppercase fw-bold project fs-1" id="project-title">Travel Blog</h3>
       <p class="mx-5 project">Blog de voyages composés de différents articles</p>
       <div class="technos m-5 w-100">
-        <a type="button" class="mx-3"
+        <a href="#" type="button" class="mx-3"
         data-bs-toggle="tooltip" data-bs-placement="bottom"
         data-bs-custom-class="custom-tooltip"
         title="HTML 5">
           <i class="fa-brands fa-html5 fa-xl icone" id="html"></i>
       </a>
-        <a  type="button" class="mx-3"
+        <a href="#" type="button" class="mx-3"
         data-bs-toggle="tooltip" data-bs-placement="bottom"
         data-bs-custom-class="custom-tooltip"
         title="CSS 3">
         <i class="fa-brands fa-css3-alt fa-xl icone" id="css"></i>
     </a>
-        <a  type="button" class="mx-3"
+        <a href="#" type="button" class="mx-3"
         data-bs-toggle="tooltip" data-bs-placement="bottom"
         data-bs-custom-class="custom-tooltip"
         title="SASS">
         <i class="fa-brands fa-sass fa-xl icone" id="sass"></i>
   </a>
-        <a  type="button" class="mx-3"
+        <a href="#" type="button" class="mx-3"
         data-bs-toggle="tooltip" data-bs-placement="bottom"
         data-bs-custom-class="custom-tooltip"
         title="JavaScript">
@@ -122,7 +125,7 @@
       <div class="row mx-5" id="projects">
         <a class="col-lg-2 col-6 text-decoration-none text-white" href="https://mathildemoreau.github.io/Boutique-du-the/" target="_blank">
             <div class="card bg-dark">
-              <img src="./images/Boutique thé.png" class="card-img-top" alt="Site du thé">
+              <img src="./images/Boutique-the.png" class="card-img-top" alt="Site du thé">
               <div class="card-body">
                 <h5 class="card-title">Boutique du thé</h5>
                 <p class="card-text">Site vitrine | 2022</p>
@@ -284,9 +287,7 @@
               <h5 class="card-title">Symfony</h5>
             </div>
           </div>
-      </div>
-
-
+        </div>
     </section>
   </main>
 
@@ -294,14 +295,14 @@
     <hr class="bg-dark d-none d-xxl-block">
     <div class="d-flex justify-content-around align-items-center m-2">
       <h6>Made with Bootstrap ! </h6>
-      <h6 class="d-flex justify-content-around align-items-center">
+      <div class="d-flex justify-content-around align-items-center">
         <a class="dropdown-item text-white" href="https://github.com/MathildeMoreau" target="_blank">
           <i class="fa-brands fa-github fa-xl m-3"></i>
         </a>
         <a class="dropdown-item text-white" href="https://www.linkedin.com/in/mathilde-moreau-b98036b3/" target="_blank">
           <i class="fa-brands fa-linkedin fa-xl m-3"></i>
         </a>
-      </h6>
+      </div>
     </div>
 
   </footer>
@@ -328,11 +329,11 @@
 </div>
 
 <!-- Modal contact -->
-<div class="modal fade" id="contactInput" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="contactInput" tabindex="-1" aria-labelledby="contactModal" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content bg-dark">
       <div class="modal-header bg-dark">
-        <h5 class="modal-title bg-dark" id="exampleModalLabel">Contact</h5>
+        <h5 class="modal-title bg-dark" id="contactModal">Contact</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body d-flex flex-column">
@@ -344,7 +345,7 @@
           <i class="fa-solid fa-phone me-2"></i>
           06.34.63.40.98
         </a>
-        <a href="./CV - Mathilde.pdf" download="CV-Mathilde-Moreau" class="text-white text-decoration-none my-3">
+        <a href="./CV-Mathilde.pdf" download="CV-Mathilde-Moreau" class="text-white text-decoration-none my-3">
           <i class="fa-solid fa-download me-2"></i>
           Télécharger mon CV
         </a>
